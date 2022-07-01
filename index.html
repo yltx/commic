@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            var cur = 1;
+            function pre() {
+                cur--;
+                document.getElementsByTagName("img")[0].setAttribute("src",cur.toString()+".jpg"); 
+            }
+            function next() {
+                cur++;
+                document.getElementsByTagName("img")[0].setAttribute("src",cur.toString()+".jpg"); 
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="pre()"> 上一页 </button>
+        <button onclick="next()"> 下一页 </button>
+        <img src="1.jpg" />
+    </body>
+</html>
